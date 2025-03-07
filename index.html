@@ -73,6 +73,31 @@
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
       <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
       <script  src="./js/script.js"></script>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+             var audio = document.getElementById("my_audio");
+       
+             // Try to play immediately
+             var playPromise = audio.play();
+       
+             if (playPromise !== undefined) {
+                 playPromise
+                     .then(() => {
+                         console.log("Autoplay started successfully.");
+                     })
+                     .catch((error) => {
+                         console.log("Autoplay blocked. Waiting for user interaction.", error);
+                         
+                         // Play on user interaction (first click)
+                         document.body.addEventListener("click", function () {
+                             audio.play().catch(err => console.log("Error playing audio:", err));
+                         }, { once: true }); // Ensures it runs only once
+                     });
+             }
+         });
+       </script>
+       
    </body>
 <!---
    _____                     __  __            ____        __     
