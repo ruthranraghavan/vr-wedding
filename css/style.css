@@ -344,7 +344,7 @@
 }
 
 .sakura {
-	background: #674ea7;
+	background: red;
 }
 
 
@@ -577,3 +577,39 @@ a {
 	font-size: 12px;
 	letter-spacing: 0pt;
 }
+
+#countdown {
+	display: flex;
+	flex-direction: column;  /* Stack children vertically */
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+  }
+  
+  .timer-numbers {
+	display: flex;
+	flex-direction: row;   /* Keep the timer numbers in one line */
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;   /* Space between the numbers and the message */
+  }
+  
+  .time-section {
+	margin: 0 5px;
+	padding: 5px 10px;
+	background-color: #eee;
+	border-radius: 5px;
+  }
+  
+  .separator {
+	margin: 0 5px;
+	font-weight: bold;
+  }
+  
+  .completion-message {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	color: #874562;
+  }  
