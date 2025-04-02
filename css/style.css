@@ -612,4 +612,12 @@ a {
 	text-align: center;
 	font-size: 20px;
 	color: #874562;
-  }  
+  }
+
+  /* Style for the added illustration */
+#ghibli-illustration {
+	display: block; /* Ensures margin auto works for centering if needed, though flex should handle it */
+	max-width: 80%; /* Adjust percentage or use pixels (e.g., 300px) as needed */
+	height: auto;   /* Maintain aspect ratio */
+	margin-bottom: 20px; /* Add some space between the image and the names */
+  }
