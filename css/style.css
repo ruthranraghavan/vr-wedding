@@ -379,13 +379,15 @@ img {
 	display: block;
 }
 
+/* Change main names color */
 .title h1 {
 	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 60px;
 	margin: 32px 0;
-	color: #674ea7;
+	/* CHANGE THIS LINE */
+	color: #FF0000; /* Changed from #674ea7 to red */
 }
 
 .title h2 {
@@ -438,6 +440,9 @@ img {
 	/* padding: 20px; */
 	text-align: center;
 	/* min-height:100%; */
+
+	/* ENSURE THIS LINE IS PRESENT */
+	flex-direction: column;
 }
 
 
@@ -471,13 +476,15 @@ body {
 	font-size: 16px;
 }
 
+/* Change button background color */
 .venue {
 	width: auto;
 	height: auto;
-	background-color: #674ea7;
+	/* CHANGE THIS LINE */
+	background-color: #FF0000; /* Changed from #674ea7 to red */
 	border-radius: 16px;
 	text-align: center;
-	color: #fff;
+	color: #fff; /* Keep text white for contrast */
 	padding: 8px;
 	margin-right: 8px;
 }
@@ -628,4 +635,20 @@ a {
 	max-width: 80%; /* Control the image size (adjust % or use px like 600px) */
 	height: auto;   /* Maintain aspect ratio */
 	margin: 40px auto; /* Add space above/below (40px) and center horizontally (auto) */
+  }
+
+/* Style for the moved Bless button */
+#bless-button {
+	border: none; /* Remove default button border */
+	cursor: pointer; /* Add pointer cursor */
+	/* Add vertical spacing */
+	margin-top: 20px;    /* Space below the illustration image */
+	margin-bottom: 20px; /* Space above the 'Capt Vijayshri' title */
+	/* Override margin-right from .venue class as it's centered now */
+	margin-right: 0;
+	/* Font settings - ensure consistency */
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	letter-spacing: 0pt; /* Match letter-spacing from .actions */
+	font-size: 12px; /* Match font-size from .actions */
   }
