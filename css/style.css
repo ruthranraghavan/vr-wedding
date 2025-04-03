@@ -621,3 +621,11 @@ a {
 	height: auto;   /* Maintain aspect ratio */
 	margin-bottom: 20px; /* Add some space between the image and the names */
   }
+
+/* Style for the proposal image */
+#proposal-image {
+	display: block; /* Treat image as a block for centering/margins */
+	max-width: 80%; /* Control the image size (adjust % or use px like 600px) */
+	height: auto;   /* Maintain aspect ratio */
+	margin: 40px auto; /* Add space above/below (40px) and center horizontally (auto) */
+  }
