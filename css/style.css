@@ -379,13 +379,41 @@ img {
 	display: block;
 }
 
+/* Scroll Animation Setup */
+.title h1,
+.title h2 {
+  opacity: 0; /* Start hidden */
+  transform: translateY(30px); /* Start slightly lower */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+}
+
+/* Add delays if you want them to appear sequentially */
+.title h1:first-of-type { /* Capt Vijayshri */
+    transition-delay: 0.1s;
+}
+.title h2 { /* & */
+    transition-delay: 0.3s;
+}
+.title h1:last-of-type { /* Ruthran */
+    transition-delay: 0.5s;
+}
+
+/* State when element becomes visible */
+.title h1.visible,
+.title h2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Change main names color */
 .title h1 {
 	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 60px;
 	margin: 32px 0;
-	color: #674ea7;
+	/* CHANGE THIS LINE */
+	color: #FF0000; /* Changed from #674ea7 to red */
 }
 
 .title h2 {
@@ -424,6 +452,7 @@ img {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 16px;
+	margin-bottom: 0px;
 }
 
 .wrap {
@@ -438,6 +467,9 @@ img {
 	/* padding: 20px; */
 	text-align: center;
 	/* min-height:100%; */
+
+	/* ENSURE THIS LINE IS PRESENT */
+	flex-direction: column;
 }
 
 
@@ -471,15 +503,17 @@ body {
 	font-size: 16px;
 }
 
+/* Change button background color */
 .venue {
 	width: auto;
 	height: auto;
-	background-color: #674ea7;
+	/* CHANGE THIS LINE */
+	background-color: #FF0000; /* Changed from #674ea7 to red */
 	border-radius: 16px;
 	text-align: center;
-	color: #fff;
+	color: #fff; /* Keep text white for contrast */
 	padding: 8px;
-	margin-right: 8px;
+	/* margin-right: 8px; */
 }
 
 .venue a {
@@ -564,9 +598,35 @@ a {
 	margin-bottom: 24px;
 }
 
-.twitter {
-	color: #874562;
+.whatsapp {
+	color: #25D366;
+	display: inline-block; /* Needed for transform to work reliably */
+	/* Add the animation */
+	animation: pulse 2s infinite ease-in-out;
+    /* Optional: Add some padding if scaling causes layout shifts */
+    padding: 5px;
 }
+
+.whatsapp i.fa-whatsapp {
+    font-size: 28px; /* Ensure icon size is appropriate */
+}
+
+/* Style for the call button */
+.call-button {
+	color: #25D366; /* Match WhatsApp color, or choose another */
+	display: inline-block; /* Needed for transform */
+	margin-left: 15px; /* Add space between WhatsApp and Call icons */
+	/* Add the animation */
+	animation: pulse 2s infinite ease-in-out;
+	/* Optional: Add padding */
+	padding: 5px;
+  }
+  
+  /* Style for the icon inside */
+  .call-button i.fa-phone {
+	  font-size: 28px; /* Match WhatsApp icon size */
+  }
+
 
 .music {
 	display: none;
@@ -574,6 +634,11 @@ a {
 
 .actions {
 	display: flex;
+	justify-content: center; /* Centers the items horizontally */
+	gap: 8px; /* Space between items in a line */
+	margin-top: 15px; /* Space above the FIRST line */
+	margin-bottom: 10px; /* Reduce space BELOW each line */
+	/* --- Existing styles --- */
 	font-size: 12px;
 	letter-spacing: 0pt;
 }
@@ -612,4 +677,87 @@ a {
 	text-align: center;
 	font-size: 20px;
 	color: #874562;
-  }  
+  }
+
+  /* Style for the added illustration */
+#ghibli-illustration {
+	display: block; /* Ensures margin auto works for centering if needed, though flex should handle it */
+	max-width: 80%; /* Adjust percentage or use pixels (e.g., 300px) as needed */
+	height: auto;   /* Maintain aspect ratio */
+	margin-bottom: 20px; /* Add some space between the image and the names */
+  }
+
+/* Style for the proposal image */
+#proposal-image {
+	display: block; /* Treat image as a block for centering/margins */
+	max-width: 80%; /* Control the image size (adjust % or use px like 600px) */
+	height: auto;   /* Maintain aspect ratio */
+	margin: 40px auto; /* Add space above/below (40px) and center horizontally (auto) */
+  }
+
+/* Style for the moved Bless button */
+#bless-button {
+	border: none; /* Remove default button border */
+	cursor: pointer; /* Add pointer cursor */
+	/* Add vertical spacing */
+	margin-top: 20px;    /* Space below the illustration image */
+	margin-bottom: 20px; /* Space above the 'Capt Vijayshri' title */
+	/* Override margin-right from .venue class as it's centered now */
+	margin-right: 0;
+	/* Font settings - ensure consistency */
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	letter-spacing: 0pt; /* Match letter-spacing from .actions */
+	font-size: 12px; /* Match font-size from .actions */
+  }
+
+  @keyframes pulse {
+	0% {
+	  transform: scale(1);
+	  opacity: 0.9;
+	}
+	50% {
+	  transform: scale(1.15); /* Slightly larger */
+	  opacity: 1;
+	}
+	100% {
+	  transform: scale(1);
+	  opacity: 0.9;
+	}
+  }
+
+  .event-details {
+	text-align: center;
+	/* Optional: Adjust margins or font styles if needed */
+	margin-top: 20px; /* Add some space above */
+	margin-bottom: 20px; /* Space below before buttons */
+	font-size: 18px; /* Example: Adjust font size */
+	color: #564861; /* Example: Match color of other text */
+	line-height: 1.5; /* Example: Adjust line spacing */
+  }
+
+/* Styling for the final site footer */
+.site-footer {
+	text-align: center; /* Center the text */
+	margin-top: 50px;   /* Add space above the footer */
+	margin-bottom: 30px; /* Add space below the footer */
+	padding-top: 20px;  /* Add space above the text inside the footer */
+	border-top: 1px solid #ccc; /* Optional: Add a subtle line separator */
+	font-size: 14px;    /* Adjust font size */
+	color: #555;         /* Set text color */
+	line-height: 1.6;   /* Adjust line spacing */
+  }
+  
+  .site-footer a {
+	color: #FF0000; /* Make the link red like other elements */
+	text-decoration: none; /* Remove underline */
+  }
+  
+  .site-footer a:hover {
+	text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .site-footer b {
+	  font-weight: bold; /* Ensure bold works */
+	  color: #333; /* Slightly darker color for the name */
+  }
