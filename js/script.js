@@ -3,12 +3,17 @@
  */
 (function ($) {
     "use strict";
+      // Petals start automatically on load
       $('.sakura-falling').sakura();
-      
+
 })(jQuery);
 
+// Music plays on any click
 $(document).on('click', function(){
-    document.getElementById("my_audio").play();
+    var audio = document.getElementById("my_audio");
+    if (audio) { // Check if audio element exists
+      audio.play().catch(e => console.error("Audio play failed on click:", e));
+    }
     console.log('Shaadi me zaroor aana');
 });
 
@@ -19,35 +24,38 @@ var countDownDate = new Date("Apr 18, 2025 00:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
-    
+
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    document.getElementById("countdown").innerHTML =
-        "<div class='timer-numbers'>" +
-            "<span class='time-section'>" + (days < 10 ? "0" + days : days) + "</span>" +
-            "<span class='separator'>:</span>" +
-            "<span class='time-section'>" + (hours < 10 ? "0" + hours : hours) + "</span>" +
-            "<span class='separator'>:</span>" +
-            "<span class='time-section'>" + (minutes < 10 ? "0" + minutes : minutes) + "</span>" +
-            "<span class='separator'>:</span>" +
-            "<span class='time-section'>" + (seconds < 10 ? "0" + seconds : seconds) + "</span>" +
-        "</div>" +
-        "<div class='completion-message'>Love Knows No Boundaries</div>";
 
+    var countdownElement = document.getElementById("countdown"); // Cache element
+    if(countdownElement){
+        countdownElement.innerHTML =
+            "<div class='timer-numbers'>" +
+                "<span class='time-section'>" + (days < 10 ? "0" + days : days) + "</span>" +
+                "<span class='separator'>:</span>" +
+                "<span class='time-section'>" + (hours < 10 ? "0" + hours : hours) + "</span>" +
+                "<span class='separator'>:</span>" +
+                "<span class='time-section'>" + (minutes < 10 ? "0" + minutes : minutes) + "</span>" +
+                "<span class='separator'>:</span>" +
+                "<span class='time-section'>" + (seconds < 10 ? "0" + seconds : seconds) + "</span>" +
+            "</div>" +
+            "<div class='completion-message'>Love Knows No Boundaries</div>";
+    }
 
     // Optionally, if you still want to clear the interval when time's up,
     // you could check if distance < 0 and then simply stop updating:
     if (distance < 0) {
         clearInterval(x);
-        // You could also change the countdown display if desired,
-        // but the message remains visible.
+        if (countdownElement) {
+             countdownElement.innerHTML = "<div class='completion-message'>The big day is here!</div>";
+        }
     }
 }, 1000);
 
-// being a bit cool :p  
+// being a bit cool :p
 var styles = [
     'background: linear-gradient(#D33106, #571402)'
     , 'border: 4px solid #3E0E02'
@@ -88,9 +96,57 @@ console.log(
     'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
 )
 
-// Add the load event listener at the end:
+// Attempt to play audio on load (may be blocked by browser)
 window.addEventListener('load', function() {
     var audio = document.getElementById("my_audio");
-    audio.muted = false;
-    audio.play();
-  });
+    if (audio) { // Check if audio element exists
+      audio.muted = false; // Try to unmute
+      audio.play().catch(e => console.error("Audio play failed on load:", e));
+    }
+});
+
+
+// --- ADD THIS BLOCK AT THE END FOR SCROLL ANIMATION ---
+$(document).ready(function() {
+    // --- Intersection Observer for Scroll Animations ---
+    // Check if IntersectionObserver is supported
+    if ('IntersectionObserver' in window) {
+        const observerOptions = {
+            root: null, // Use the viewport as the root
+            rootMargin: '0px',
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Stop observing once visible
+                    console.log('Element became visible:', entry.target);
+                }
+            });
+        };
+
+        const scrollObserver = new IntersectionObserver(observerCallback, observerOptions);
+
+        // Select the elements to observe (Using vanilla JS here is fine)
+        const elementsToAnimate = document.querySelectorAll('.title h1, .title h2');
+
+        elementsToAnimate.forEach(el => {
+            if (el) {
+                scrollObserver.observe(el);
+            } else {
+                console.warn("Could not find element(s) for scroll animation observer.");
+            }
+        });
+    } else {
+        // Fallback for older browsers: just make elements visible immediately
+        console.log("Intersection Observer not supported, showing elements immediately.");
+        const elementsToAnimate = document.querySelectorAll('.title h1, .title h2');
+        elementsToAnimate.forEach(el => {
+            if(el) el.classList.add('visible');
+        });
+    }
+    // --- End of Intersection Observer ---
+});
+// --- END OF ADDED BLOCK ---
