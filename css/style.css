@@ -452,6 +452,7 @@ img {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 16px;
+	margin-bottom: 0px;
 }
 
 .wrap {
@@ -512,7 +513,7 @@ body {
 	text-align: center;
 	color: #fff; /* Keep text white for contrast */
 	padding: 8px;
-	margin-right: 8px;
+	/* margin-right: 8px; */
 }
 
 .venue a {
@@ -633,6 +634,11 @@ a {
 
 .actions {
 	display: flex;
+	justify-content: center; /* Centers the items horizontally */
+	gap: 8px; /* Space between items in a line */
+	margin-top: 15px; /* Space above the FIRST line */
+	margin-bottom: 10px; /* Reduce space BELOW each line */
+	/* --- Existing styles --- */
 	font-size: 12px;
 	letter-spacing: 0pt;
 }
@@ -718,4 +724,40 @@ a {
 	  transform: scale(1);
 	  opacity: 0.9;
 	}
+  }
+
+  .event-details {
+	text-align: center;
+	/* Optional: Adjust margins or font styles if needed */
+	margin-top: 20px; /* Add some space above */
+	margin-bottom: 20px; /* Space below before buttons */
+	font-size: 18px; /* Example: Adjust font size */
+	color: #564861; /* Example: Match color of other text */
+	line-height: 1.5; /* Example: Adjust line spacing */
+  }
+
+/* Styling for the final site footer */
+.site-footer {
+	text-align: center; /* Center the text */
+	margin-top: 50px;   /* Add space above the footer */
+	margin-bottom: 30px; /* Add space below the footer */
+	padding-top: 20px;  /* Add space above the text inside the footer */
+	border-top: 1px solid #ccc; /* Optional: Add a subtle line separator */
+	font-size: 14px;    /* Adjust font size */
+	color: #555;         /* Set text color */
+	line-height: 1.6;   /* Adjust line spacing */
+  }
+  
+  .site-footer a {
+	color: #FF0000; /* Make the link red like other elements */
+	text-decoration: none; /* Remove underline */
+  }
+  
+  .site-footer a:hover {
+	text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .site-footer b {
+	  font-weight: bold; /* Ensure bold works */
+	  color: #333; /* Slightly darker color for the name */
   }
