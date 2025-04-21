@@ -489,6 +489,7 @@ img {
 
 /* Site Footer Styling */
 .site-footer {
+<<<<<<< HEAD
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 30px;
@@ -517,4 +518,97 @@ img {
 a {
 	text-decoration: none;
     color: inherit;
+=======
+	text-align: center; /* Center the text */
+	margin-top: 50px;   /* Add space above the footer */
+	margin-bottom: 30px; /* Add space below the footer */
+	padding-top: 20px;  /* Add space above the text inside the footer */
+	border-top: 1px solid #ccc; /* Optional: Add a subtle line separator */
+	font-size: 14px;    /* Adjust font size */
+	color: #555;         /* Set text color */
+	line-height: 1.6;   /* Adjust line spacing */
+  }
+  
+  .site-footer a {
+	color: #FF0000; /* Make the link red like other elements */
+	text-decoration: none; /* Remove underline */
+  }
+  
+  .site-footer a:hover {
+	text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .site-footer b {
+	  font-weight: bold; /* Ensure bold works */
+	  color: #333; /* Slightly darker color for the name */
+  }
+
+  /* Ensure these styles are in your style.css */
+
+/* Style for the container of number + label */
+.time-part {
+    display: flex;
+    flex-direction: column; /* Stack number above label */
+    align-items: center;    /* Center number and label horizontally */
+    margin: 0 5px; /* Add horizontal space around each part */
+}
+
+/* Adjust existing .time-section (the number boxes) */
+.time-section {
+    padding: 8px 12px; /* Example padding */
+	background-color: #eee;
+	border-radius: 5px;
+    font-size: 24px; /* Set number size */
+    font-weight: bold;
+    min-width: 40px; /* Ensure boxes have a minimum width */
+    text-align: center;
+    margin-bottom: 4px; /* Add small space below number, above label */
+}
+
+/* NEW STYLE for the labels */
+.time-label {
+    font-size: 12px; /* Smaller font size for labels */
+    color: #555;     /* Adjust color as needed */
+    text-transform: uppercase;
+}
+
+/* Adjust existing separator */
+.separator {
+	font-size: 24px; /* Match number size */
+	font-weight: bold;
+    color: #555; /* Adjust color if needed */
+    align-self: center; /* Ensure it aligns nicely with number boxes */
+    padding-bottom: 16px; /* Hacky way to roughly center with labels below, adjust if needed */
+    /* Remove horizontal margin if using gap on .timer-numbers */
+    /* margin: 0 5px; */
+}
+
+/* Adjust .timer-numbers (row containing the parts) */
+.timer-numbers {
+	display: flex;
+	flex-direction: row;   /* Keep the parts in a row */
+	justify-content: center;
+	align-items: center; /* Align separators vertically */
+    gap: 5px; /* Add small gap between parts and separators */
+}
+
+/* Adjust #countdown if necessary */
+#countdown {
+	display: flex;
+	flex-direction: column; /* Keep main container stacking vertically */
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Keep existing .completion-message styling */
+.completion-message {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	color: #874562;
+    margin-top: 15px; /* Add space above the message */
+>>>>>>> origin/main
 }

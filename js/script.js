@@ -43,6 +43,7 @@ var x = setInterval(function() {
     var seconds = Math.floor((timeSince % (1000 * 60)) / 1000);
 
     var countdownElement = document.getElementById("countdown"); // Cache element
+<<<<<<< HEAD
     if(countdownElement){
         // Update the display with the new structure (Units containing Number + Label)
         countdownElement.innerHTML =
@@ -75,6 +76,43 @@ var x = setInterval(function() {
             // Optional: Completion message
              "<div class='completion-message full-width'>Celebrating Together!</div>";
     }
+=======
+        // --- START: Replace the block starting from this line ---
+        if(countdownElement){
+            // Check if timer expired (handle this first)
+            if (distance < 0) {
+                clearInterval(x);
+                countdownElement.innerHTML = "<div class='completion-message'>The big day is here!</div>";
+            } else {
+                // Build the new HTML with labels
+                countdownElement.innerHTML =
+                    "<div class='timer-numbers'>" +
+                        "<div class='time-part'>" + // Wrap number and label for Days
+                            "<span class='time-section'>" + (days < 10 ? "0" + days : days) + "</span>" +
+                            "<span class='time-label'>Days</span>" +
+                        "</div>" +
+                        "<span class='separator'>:</span>" +
+                        "<div class='time-part'>" + // Wrap number and label for Hours
+                            "<span class='time-section'>" + (hours < 10 ? "0" + hours : hours) + "</span>" +
+                            "<span class='time-label'>Hours</span>" +
+                        "</div>" +
+                        "<span class='separator'>:</span>" +
+                        "<div class='time-part'>" + // Wrap number and label for Minutes
+                            "<span class='time-section'>" + (minutes < 10 ? "0" + minutes : minutes) + "</span>" +
+                            "<span class='time-label'>Minutes</span>" +
+                        "</div>" +
+                        "<span class='separator'>:</span>" +
+                        "<div class='time-part'>" + // Wrap number and label for Seconds
+                            "<span class='time-section'>" + (seconds < 10 ? "0" + seconds : seconds) + "</span>" +
+                            "<span class='time-label'>Seconds</span>" +
+                        "</div>" +
+                    "</div>" +
+                    // Keep the message below
+                    "<div class='completion-message'>Love Knows No Boundaries</div>";
+            }
+        }
+        // --- END: Replace the block ending just above this line ---
+>>>>>>> origin/main
 
 }, 1000);
 
