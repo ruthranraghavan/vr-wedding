@@ -1,763 +1,520 @@
+/* Sakura Petal Animations */
 @-webkit-keyframes fall {
-	0% {
-		opacity: 0.9;
-		top: 0
-	}
-	100% {
-		opacity: 0.2;
-		top: 100%
-	}
+	0% { opacity: 0.9; top: 0 }
+	100% { opacity: 0.2; top: 100% }
 }
-
 @keyframes fall {
-	0% {
-		opacity: 0.9;
-		top: 0
-	}
-	100% {
-		opacity: 0.2;
-		top: 100%
-	}
+	0% { opacity: 0.9; top: 0 }
+	100% { opacity: 0.2; top: 100% }
 }
-
 @-webkit-keyframes blow-soft-left {
-	0% {
-		margin-left: 0
-	}
-	100% {
-		margin-left: -50%
-	}
+	0% { margin-left: 0 }
+	100% { margin-left: -50% }
 }
-
 @keyframes blow-soft-left {
-	0% {
-		margin-left: 0
-	}
-	100% {
-		margin-left: -50%
-	}
+	0% { margin-left: 0 }
+	100% { margin-left: -50% }
 }
-
 @-webkit-keyframes blow-medium-left {
-	0% {
-		margin-left: 0
-	}
-	100% {
-		margin-left: -100%
-	}
+	0% { margin-left: 0 }
+	100% { margin-left: -100% }
 }
-
 @keyframes blow-medium-left {
-	0% {
-		margin-left: 0
-	}
-	100% {
-		margin-left: -100%
-	}
+	0% { margin-left: 0 }
+	100% { margin-left: -100% }
 }
-
 @-webkit-keyframes blow-soft-right {
-	0% {
-		margin-left: 0
-	}
-	100% {
-		margin-left: 50%
-	}
+	0% { margin-left: 0 }
+	100% { margin-left: 50% }
 }
-
 @keyframes blow-soft-right {
-	0% {
-		margin-left: 0
-	}
-	100% {
-		margin-left: 50%
-	}
+	0% { margin-left: 0 }
+	100% { margin-left: 50% }
 }
-
 @-webkit-keyframes blow-medium-right {
-	0% {
-		margin-left: 0
-	}
-	100% {
-		margin-left: 100%
-	}
+	0% { margin-left: 0 }
+	100% { margin-left: 100% }
 }
-
 @keyframes blow-medium-right {
-	0% {
-		margin-left: 0
-	}
-	100% {
-		margin-left: 100%
-	}
+	0% { margin-left: 0 }
+	100% { margin-left: 100% }
 }
-
 @-webkit-keyframes sway-0 {
-	0% {
-		-webkit-transform: rotate(-5deg)
-	}
-	40% {
-		-webkit-transform: rotate(28deg)
-	}
-	100% {
-		-webkit-transform: rotate(3deg)
-	}
+	0% { -webkit-transform: rotate(-5deg) }
+	40% { -webkit-transform: rotate(28deg) }
+	100% { -webkit-transform: rotate(3deg) }
 }
-
 @keyframes sway-0 {
-	0% {
-		-ms-transform: rotate(-5deg);
-		transform: rotate(-5deg)
-	}
-	40% {
-		-ms-transform: rotate(28deg);
-		transform: rotate(28deg)
-	}
-	100% {
-		-ms-transform: rotate(3deg);
-		transform: rotate(3deg)
-	}
+	0% { transform: rotate(-5deg) }
+	40% { transform: rotate(28deg) }
+	100% { transform: rotate(3deg) }
 }
-
 @-webkit-keyframes sway-1 {
-	0% {
-		-webkit-transform: rotate(10deg)
-	}
-	40% {
-		-webkit-transform: rotate(43deg)
-	}
-	100% {
-		-webkit-transform: rotate(15deg)
-	}
+	0% { -webkit-transform: rotate(10deg) }
+	40% { -webkit-transform: rotate(43deg) }
+	100% { -webkit-transform: rotate(15deg) }
 }
-
 @keyframes sway-1 {
-	0% {
-		-ms-transform: rotate(10deg);
-		transform: rotate(10deg)
-	}
-	40% {
-		-ms-transform: rotate(43deg);
-		transform: rotate(43deg)
-	}
-	100% {
-		-ms-transform: rotate(15deg);
-		transform: rotate(15deg)
-	}
+	0% { transform: rotate(10deg) }
+	40% { transform: rotate(43deg) }
+	100% { transform: rotate(15deg) }
 }
-
 @-webkit-keyframes sway-2 {
-	0% {
-		-webkit-transform: rotate(15deg)
-	}
-	40% {
-		-webkit-transform: rotate(56deg)
-	}
-	100% {
-		-webkit-transform: rotate(22deg)
-	}
+	0% { -webkit-transform: rotate(15deg) }
+	40% { -webkit-transform: rotate(56deg) }
+	100% { -webkit-transform: rotate(22deg) }
 }
-
 @keyframes sway-2 {
-	0% {
-		-ms-transform: rotate(15deg);
-		transform: rotate(15deg)
-	}
-	40% {
-		-ms-transform: rotate(56deg);
-		transform: rotate(56deg)
-	}
-	100% {
-		-ms-transform: rotate(22deg);
-		transform: rotate(22deg)
-	}
+	0% { transform: rotate(15deg) }
+	40% { transform: rotate(56deg) }
+	100% { transform: rotate(22deg) }
 }
-
 @-webkit-keyframes sway-3 {
-	0% {
-		-webkit-transform: rotate(25deg)
-	}
-	40% {
-		-webkit-transform: rotate(74deg)
-	}
-	100% {
-		-webkit-transform: rotate(37deg)
-	}
+	0% { -webkit-transform: rotate(25deg) }
+	40% { -webkit-transform: rotate(74deg) }
+	100% { -webkit-transform: rotate(37deg) }
 }
-
 @keyframes sway-3 {
-	0% {
-		-ms-transform: rotate(25deg);
-		transform: rotate(25deg)
-	}
-	40% {
-		-ms-transform: rotate(74deg);
-		transform: rotate(74deg)
-	}
-	100% {
-		-ms-transform: rotate(37deg);
-		transform: rotate(37deg)
-	}
+	0% { transform: rotate(25deg) }
+	40% { transform: rotate(74deg) }
+	100% { transform: rotate(37deg) }
 }
-
 @-webkit-keyframes sway-4 {
-	0% {
-		-webkit-transform: rotate(40deg)
-	}
-	40% {
-		-webkit-transform: rotate(68deg)
-	}
-	100% {
-		-webkit-transform: rotate(25deg)
-	}
+	0% { -webkit-transform: rotate(40deg) }
+	40% { -webkit-transform: rotate(68deg) }
+	100% { -webkit-transform: rotate(25deg) }
 }
-
 @keyframes sway-4 {
-	0% {
-		-ms-transform: rotate(40deg);
-		transform: rotate(40deg)
-	}
-	40% {
-		-ms-transform: rotate(68deg);
-		transform: rotate(68deg)
-	}
-	100% {
-		-ms-transform: rotate(25deg);
-		transform: rotate(25deg)
-	}
+	0% { transform: rotate(40deg) }
+	40% { transform: rotate(68deg) }
+	100% { transform: rotate(25deg) }
 }
-
 @-webkit-keyframes sway-5 {
-	0% {
-		-webkit-transform: rotate(50deg)
-	}
-	40% {
-		-webkit-transform: rotate(78deg)
-	}
-	100% {
-		-webkit-transform: rotate(40deg)
-	}
+	0% { -webkit-transform: rotate(50deg) }
+	40% { -webkit-transform: rotate(78deg) }
+	100% { -webkit-transform: rotate(40deg) }
 }
-
 @keyframes sway-5 {
-	0% {
-		-ms-transform: rotate(50deg);
-		transform: rotate(50deg)
-	}
-	40% {
-		-ms-transform: rotate(78deg);
-		transform: rotate(78deg)
-	}
-	100% {
-		-ms-transform: rotate(40deg);
-		transform: rotate(40deg)
-	}
+	0% { transform: rotate(50deg) }
+	40% { transform: rotate(78deg) }
+	100% { transform: rotate(40deg) }
 }
-
 @-webkit-keyframes sway-6 {
-	0% {
-		-webkit-transform: rotate(65deg)
-	}
-	40% {
-		-webkit-transform: rotate(92deg)
-	}
-	100% {
-		-webkit-transform: rotate(58deg)
-	}
+	0% { -webkit-transform: rotate(65deg) }
+	40% { -webkit-transform: rotate(92deg) }
+	100% { -webkit-transform: rotate(58deg) }
 }
-
 @keyframes sway-6 {
-	0% {
-		-ms-transform: rotate(65deg);
-		transform: rotate(65deg)
-	}
-	40% {
-		-ms-transform: rotate(92deg);
-		transform: rotate(92deg)
-	}
-	100% {
-		-ms-transform: rotate(58deg);
-		transform: rotate(58deg)
-	}
+	0% { transform: rotate(65deg) }
+	40% { transform: rotate(92deg) }
+	100% { transform: rotate(58deg) }
 }
-
 @-webkit-keyframes sway-7 {
-	0% {
-		-webkit-transform: rotate(72deg)
-	}
-	40% {
-		-webkit-transform: rotate(118deg)
-	}
-	100% {
-		-webkit-transform: rotate(68deg)
-	}
+	0% { -webkit-transform: rotate(72deg) }
+	40% { -webkit-transform: rotate(118deg) }
+	100% { -webkit-transform: rotate(68deg) }
 }
-
 @keyframes sway-7 {
-	0% {
-		-ms-transform: rotate(72deg);
-		transform: rotate(72deg)
-	}
-	40% {
-		-ms-transform: rotate(118deg);
-		transform: rotate(118deg)
-	}
-	100% {
-		-ms-transform: rotate(68deg);
-		transform: rotate(68deg)
-	}
+	0% { transform: rotate(72deg) }
+	40% { transform: rotate(118deg) }
+	100% { transform: rotate(68deg) }
 }
-
 @-webkit-keyframes sway-8 {
-	0% {
-		-webkit-transform: rotate(94deg)
-	}
-	40% {
-		-webkit-transform: rotate(136deg)
-	}
-	100% {
-		-webkit-transform: rotate(82deg)
-	}
+	0% { -webkit-transform: rotate(94deg) }
+	40% { -webkit-transform: rotate(136deg) }
+	100% { -webkit-transform: rotate(82deg) }
 }
-
 @keyframes sway-8 {
-	0% {
-		-ms-transform: rotate(94deg);
-		transform: rotate(94deg)
-	}
-	40% {
-		-ms-transform: rotate(136deg);
-		transform: rotate(136deg)
-	}
-	100% {
-		-ms-transform: rotate(82deg);
-		transform: rotate(82deg)
-	}
+	0% { transform: rotate(94deg) }
+	40% { transform: rotate(136deg) }
+	100% { transform: rotate(82deg) }
 }
 
-.sakura {
-	/* background: -webkit-linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));
-    background: linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));*/
-	background: red;
+/* Pulse animation for buttons */
+@keyframes pulse {
+	0% { transform: scale(1); opacity: 0.9; }
+	50% { transform: scale(1.15); opacity: 1; }
+	100% { transform: scale(1); opacity: 0.9; }
+}
+
+/* Sakura container - original styles were conflicting */
+.sakura-falling {
 	pointer-events: none;
-	position: absolute
+	position: fixed; /* Use fixed to cover viewport regardless of scroll */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cover full viewport width */
+    height: 100vh; /* Cover full viewport height */
+    overflow: hidden; /* Prevent scrollbars */
+    z-index: 0; /* Behind most content */
 }
-
+/* Individual sakura petal (ensure background is transparent or desired color) */
 .sakura {
-	background: red;
+	background: #FFC0CB; /* Example light pink - change as needed */
+	border-radius: 50%;
+    /* Original styles below might not be needed depending on plugin */
+	/* pointer-events: none; */
+	/* position: absolute; */
 }
 
 
 /*******************************/
-
-body {
-	font-family: Arial, Helvetica, Sans-serif;
+/* Basic Reset & Body Styling */
+* {
+    box-sizing: border-box; /* Include padding/border in total width/height */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+	font-family: 'Arvo', serif; /* Default font */
 }
 
+html {
+    scroll-behavior: smooth; /* Optional: smooth scrolling */
+}
+
+body {
+	font-family: Arial, Helvetica, Sans-serif; /* Fallback font */
+    display: flex;
+	justify-content: center; /* Center direct children horizontally */
+	align-items: center;   /* Center direct children horizontally */
+	flex-direction: column; /* Stack direct children vertically */
+    min-height: 100vh;
+    padding-top: 80px; /* Add padding if top content is too close to edge */
+    padding-bottom: 50px;
+    width: 100%; /* Ensure body takes full width */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Base image styling */
 img {
 	max-width: 100%;
 	height: auto;
+    vertical-align: middle; /* Prevent small gaps below images */
 }
 
-@media (max-width:900px) {
-	img {
-		max-width: 30%;
-	}
-}
-
-.top-right-decoration {
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: block;
-}
-
+/* Corner Decorations */
+.top-right-decoration,
 .top-left-decoration {
 	position: absolute;
 	top: 0;
-	left: 0;
 	display: block;
+    width: 150px; /* Adjust size */
+    max-width: 25%; /* Max percentage */
+    height: auto;
+    z-index: 5; /* Keep above petals but below content potentially */
 }
+.top-right-decoration { right: 0; }
+.top-left-decoration { left: 0; }
 
-/* Scroll Animation Setup */
-.title h1,
-.title h2 {
+/* --- General Scroll Animation Setup --- */
+.animate-on-scroll {
   opacity: 0; /* Start hidden */
-  transform: translateY(30px); /* Start slightly lower */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+  transform: translateY(25px); /* Start slightly lower */
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  transition-delay: 0.1s; /* Base delay */
 }
-
-/* Add delays if you want them to appear sequentially */
-.title h1:first-of-type { /* Capt Vijayshri */
-    transition-delay: 0.1s;
-}
-.title h2 { /* & */
-    transition-delay: 0.3s;
-}
-.title h1:last-of-type { /* Ruthran */
-    transition-delay: 0.5s;
-}
-
 /* State when element becomes visible */
-.title h1.visible,
-.title h2.visible {
+.animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
 }
+/* --- End Scroll Animation --- */
 
-/* Change main names color */
+
+/* --- .title and its contents styling --- */
+.title {
+	margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
 .title h1 {
 	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	font-style: normal;
-	font-size: 60px;
-	margin: 32px 0;
-	/* CHANGE THIS LINE */
-	color: #FF0000; /* Changed from #674ea7 to red */
+	font-size: clamp(40px, 8vw, 60px); /* Responsive font size */
+	margin: 25px 0;
+	color: #FF0000; /* Red color */
 }
-
 .title h2 {
 	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	font-style: normal;
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
+	font-size: clamp(20px, 4vw, 24px);
 	color: #e25c67;
 	line-height: 1;
 }
-
-.dance-med {
-	font-family: 'Dancing Script', cursive;
-	font-weight: bolder;
-	font-style: normal;
-	font-size: 32px;
-	color: #674ea7;
-	margin: 16px;
-	text-align: center;
-}
-
 .title h3 {
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	font-size: 24px;
+	font-size: clamp(18px, 3.5vw, 24px);
 	color: #674ea7;
 	margin-top: 5px;
+    margin-bottom: 10px;
 }
-
 .title p {
 	color: #564861;
-	margin: 30px 0 20px;
+	margin: 5px 0 0;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	font-size: 16px;
-	margin-bottom: 0px;
+	font-size: clamp(12px, 2.5vw, 16px);
+    line-height: 1.4;
 }
+/* --- End .title styles --- */
 
+
+/* --- .wrap container styling --- */
 .wrap {
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-justify-content: center;
 	justify-content: center;
-	-webkit-align-items: center;
 	align-items: center;
-	/* padding: 20px; */
 	text-align: center;
-	/* min-height:100%; */
-
-	/* ENSURE THIS LINE IS PRESENT */
 	flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2; /* Keep above background petals */
 }
-
-
-/** **/
-
-* {
-	/* margin: 0;
-    padding: 0; */
-	font-family: 'Arvo', serif;
-}
-
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* height: 100vh;
-    width: 100%; */
-	flex-direction: column;
-}
-
-.title {
-	margin-bottom: 40px;
-}
-
-#time {
-	width: auto;
+#ghibli-illustration {
+	display: block;
+	max-width: 60%;
 	height: auto;
-	padding: 20px;
-	background-color: #eee;
-	border-radius: 20px;
-	font-size: 16px;
+	margin: 20px auto;
 }
+/* --- End .wrap styles --- */
 
-/* Change button background color */
+
+/* --- Action Button Styling --- */
 .venue {
 	width: auto;
 	height: auto;
-	/* CHANGE THIS LINE */
-	background-color: #FF0000; /* Changed from #674ea7 to red */
+	background-color: #FF0000; /* Red */
 	border-radius: 16px;
 	text-align: center;
-	color: #fff; /* Keep text white for contrast */
-	padding: 8px;
-	/* margin-right: 8px; */
-}
-
-.venue a {
-	text-decoration: none;
 	color: #fff;
-}
-
-.container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	border-radius: 10px;
-	overflow: hidden;
-}
-
-.block {
-	width: 180px;
-	height: 160px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: #fff;
-}
-
-.days {
-	background: linear-gradient(90deg, #b33a46, #9b313c);
-}
-
-.hours {
-	background: linear-gradient(90deg, #a7c3cd, #90a9b2);
-}
-
-.minutes {
-	background-color: #874562;
-}
-
-.seconds {
-	background-color: #145689;
-}
-
-.date {
-	color: #874562;
-	font-weight: 900;
-}
-
-.place {
-	color: #874562;
-	font-weight: 900;
-}
-
-.footer {
-	color: #564861;
-	text-align: center;
-	font-size: 16px;
-	margin: 24px;
-}
-
-.phone {
-	color: #874562
-}
-
-.end-msg {
-	width: auto;
-	height: auto;
-	padding: 12px;
-	background: linear-gradient(90deg, #b33a46, #9b313c);
-	border-radius: 20px;
-	font-size: 14px;
-	color: #fff;
-	font-size: 24px;
-}
-
-a {
-	text-decoration: none;
-}
-
-.happiness {
-	color: #874562;
-	font-size: 24px;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 24px;
-}
-
-.whatsapp {
-	color: #25D366;
-	display: inline-block; /* Needed for transform to work reliably */
-	/* Add the animation */
-	animation: pulse 2s infinite ease-in-out;
-    /* Optional: Add some padding if scaling causes layout shifts */
-    padding: 5px;
-}
-
-.whatsapp i.fa-whatsapp {
-    font-size: 28px; /* Ensure icon size is appropriate */
-}
-
-/* Style for the call button */
-.call-button {
-	color: #25D366; /* Match WhatsApp color, or choose another */
-	display: inline-block; /* Needed for transform */
-	margin-left: 15px; /* Add space between WhatsApp and Call icons */
-	/* Add the animation */
-	animation: pulse 2s infinite ease-in-out;
-	/* Optional: Add padding */
-	padding: 5px;
-  }
-  
-  /* Style for the icon inside */
-  .call-button i.fa-phone {
-	  font-size: 28px; /* Match WhatsApp icon size */
-  }
-
-
-.music {
-	display: none;
-}
-
-.actions {
-	display: flex;
-	justify-content: center; /* Centers the items horizontally */
-	gap: 8px; /* Space between items in a line */
-	margin-top: 15px; /* Space above the FIRST line */
-	margin-bottom: 10px; /* Reduce space BELOW each line */
-	/* --- Existing styles --- */
+	padding: 8px 15px; /* Adjusted padding */
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-family: 'Arvo', serif;
+    text-transform: uppercase;
 	font-size: 12px;
 	letter-spacing: 0pt;
+    transition: background-color 0.3s ease; /* Hover effect */
+}
+.venue:hover {
+    background-color: #CC0000; /* Darker red on hover */
+}
+.venue a { /* This rule seems incorrect, link is parent */
+	text-decoration: none;
+	color: #fff;
+}
+/* --- End .venue styles --- */
+
+/* Action Buttons Container Styling */
+.actions {
+	display: flex;
+	justify-content: center;
+	align-items: center; /* Align items vertically */
+	gap: 15px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	width: 100%;
+    flex-wrap: wrap; /* Allow buttons/icons to wrap */
+}
+/* --- End .actions styles --- */
+
+
+/* Date/Place text styling */
+.date, .place {
+	color: #874562;
+	font-weight: 900;
 }
 
+
+/* Dance-med text block */
+.dance-med {
+	font-family: 'Dancing Script', cursive;
+	font-weight: bolder;
+	font-style: normal;
+	font-size: clamp(24px, 5vw, 32px);
+	color: #674ea7;
+	margin: 25px 16px;
+	text-align: center;
+    line-height: 1.6;
+    max-width: 800px; /* Prevent text becoming too wide */
+    padding: 0 15px;
+}
+
+
+/* Happiness text block */
+.happiness {
+	color: #874562;
+	font-size: clamp(16px, 3.5vw, 20px);
+	font-weight: bold;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+    line-height: 1.6;
+    max-width: 800px;
+    padding: 0 15px;
+}
+
+/* Event details text block */
+.event-details {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	font-size: clamp(14px, 3vw, 16px);
+	color: #564861;
+	line-height: 1.5;
+    max-width: 800px;
+    padding: 0 15px;
+}
+
+
+/* --- Icon Styling (WhatsApp/Call) --- */
+.whatsapp, .call-button {
+    display: inline-block;
+    animation: pulse 2s infinite ease-in-out;
+    padding: 5px;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+}
+.whatsapp { color: #25D366; }
+.call-button { color: #FF0000; margin-left: 15px; }
+
+.whatsapp:hover { color: #1EAE56; } /* Darker green */
+.call-button:hover { color: #CC0000; } /* Darker red */
+
+.whatsapp i.fa-whatsapp,
+.call-button i.fa-phone {
+    font-size: 28px;
+}
+/* --- End Icon Styling --- */
+
+
+/* Music player - hidden */
+.music { display: none; }
+
+
+/* --- NEW Countdown Timer Styling --- */
 #countdown {
 	display: flex;
-	flex-direction: column;  /* Stack children vertically */
+	flex-direction: row;
+    flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
-	font-size: 24px;
+	align-items: baseline;
 	font-family: Arial, sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 0 10px; /* Ensure some padding */
   }
-  
-  .timer-numbers {
-	display: flex;
-	flex-direction: row;   /* Keep the timer numbers in one line */
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 10px;   /* Space between the numbers and the message */
-  }
-  
-  .time-section {
-	margin: 0 5px;
-	padding: 5px 10px;
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+.time-number {
+    display: inline-block;
+	padding: 8px 12px; /* Slightly more padding */
 	background-color: #eee;
 	border-radius: 5px;
-  }
-  
-  .separator {
-	margin: 0 5px;
+    min-width: 45px; /* Adjusted width */
+    text-align: center;
+    font-size: clamp(20px, 5vw, 28px); /* Responsive font size */
+    font-weight: bold;
+    line-height: 1; /* Prevent extra space */
+}
+.time-label {
+    margin-top: 5px; /* Increased space */
+    font-size: 10px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 0.5px; /* Optional letter spacing */
+}
+.time-separator {
+	margin: 0 3px;
 	font-weight: bold;
-  }
-  
-  .completion-message {
-	display: block;
-	text-align: center;
-	font-size: 20px;
+    font-size: clamp(20px, 5vw, 28px); /* Match number size */
+    padding-bottom: 14px; /* Adjust alignment */
+    line-height: 1;
+}
+.completion-message.full-width {
+    flex-basis: 100%;
+    margin-top: 15px; /* Increased space */
+    text-align: center;
+	font-size: clamp(16px, 3.5vw, 18px);
 	color: #874562;
-  }
+}
+/* Original completion message (if not full width) */
+.completion-message {
+	text-align: center;
+	font-size: clamp(16px, 3.5vw, 18px);
+	color: #874562;
+}
+/* --- End NEW Countdown Styles --- */
 
-  /* Style for the added illustration */
-#ghibli-illustration {
-	display: block; /* Ensures margin auto works for centering if needed, though flex should handle it */
-	max-width: 80%; /* Adjust percentage or use pixels (e.g., 300px) as needed */
-	height: auto;   /* Maintain aspect ratio */
-	margin-bottom: 20px; /* Add some space between the image and the names */
-  }
 
-/* Style for the proposal image */
+/* Proposal Image Styling */
 #proposal-image {
-	display: block; /* Treat image as a block for centering/margins */
-	max-width: 80%; /* Control the image size (adjust % or use px like 600px) */
-	height: auto;   /* Maintain aspect ratio */
-	margin: 40px auto; /* Add space above/below (40px) and center horizontally (auto) */
-  }
+	display: block;
+	max-width: 70%;
+	height: auto;
+	margin: 30px auto;
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional subtle shadow */
+}
 
-/* Style for the moved Bless button */
-#bless-button {
-	border: none; /* Remove default button border */
-	cursor: pointer; /* Add pointer cursor */
-	/* Add vertical spacing */
-	margin-top: 20px;    /* Space below the illustration image */
-	margin-bottom: 20px; /* Space above the 'Capt Vijayshri' title */
-	/* Override margin-right from .venue class as it's centered now */
+/* Bless Button Styling (If used) */
+#bless-button { /* Note: This button is not in the current index.html */
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	margin-right: 0;
-	/* Font settings - ensure consistency */
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
-	letter-spacing: 0pt; /* Match letter-spacing from .actions */
-	font-size: 12px; /* Match font-size from .actions */
-  }
+	letter-spacing: 0pt;
+	font-size: 12px;
+    /* Needs .venue class for background/padding */
+}
 
-  @keyframes pulse {
-	0% {
-	  transform: scale(1);
-	  opacity: 0.9;
-	}
-	50% {
-	  transform: scale(1.15); /* Slightly larger */
-	  opacity: 1;
-	}
-	100% {
-	  transform: scale(1);
-	  opacity: 0.9;
-	}
-  }
 
-  .event-details {
-	text-align: center;
-	/* Optional: Adjust margins or font styles if needed */
-	margin-top: 20px; /* Add some space above */
-	margin-bottom: 20px; /* Space below before buttons */
-	font-size: 18px; /* Example: Adjust font size */
-	color: #564861; /* Example: Match color of other text */
-	line-height: 1.5; /* Example: Adjust line spacing */
-  }
-
-/* Styling for the final site footer */
+/* Site Footer Styling */
 .site-footer {
-	text-align: center; /* Center the text */
-	margin-top: 50px;   /* Add space above the footer */
-	margin-bottom: 30px; /* Add space below the footer */
-	padding-top: 20px;  /* Add space above the text inside the footer */
-	border-top: 1px solid #ccc; /* Optional: Add a subtle line separator */
-	font-size: 14px;    /* Adjust font size */
-	color: #555;         /* Set text color */
-	line-height: 1.6;   /* Adjust line spacing */
-  }
-  
-  .site-footer a {
-	color: #FF0000; /* Make the link red like other elements */
-	text-decoration: none; /* Remove underline */
-  }
-  
-  .site-footer a:hover {
-	text-decoration: underline; /* Add underline on hover */
-  }
-  
-  .site-footer b {
-	  font-weight: bold; /* Ensure bold works */
-	  color: #333; /* Slightly darker color for the name */
-  }
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding: 20px 15px; /* Added side padding */
+	border-top: 1px solid #ccc;
+	font-size: 14px;
+	color: #555;
+	line-height: 1.6;
+    width: 100%;
+    box-sizing: border-box;
+}
+.site-footer a {
+	color: #FF0000; /* Red link */
+	text-decoration: none;
+}
+.site-footer a:hover {
+	text-decoration: underline;
+}
+.site-footer b {
+	font-weight: bold;
+	color: #333;
+}
+
+
+/* General link styling */
+a {
+	text-decoration: none;
+    color: inherit;
+}
